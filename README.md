@@ -2,4 +2,4 @@
 Config files for my GitHub profile.
 
 # Learn C Programming
-Demo program of my c programming of each topics
+Demo program of c programming of each topics with output in comemnts section
