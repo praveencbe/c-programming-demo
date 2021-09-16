@@ -11,8 +11,10 @@
 int main()
 {
     int num, *arr, i;
+    printf("Enter the array size: ");
     scanf("%d", &num);
     arr = (int*) malloc(num * sizeof(int));
+    printf("Enter the input array value with %d space/enter:",num-1);
     for(i = 0; i < num; i++) {
         scanf("%d", arr + i);
     }
@@ -22,7 +24,7 @@ int main()
         arr[i] = arr [j];
         arr[j] = t;
     }
-
+    printf("Revered Array From input :");
     for(i = 0; i < num; i++)
         printf("%d ", *(arr + i));
     return 0;
@@ -30,10 +32,11 @@ int main()
 
 
 /* output:
-5
-1 2 3 4 5
-5 4 3 2 1 
+Enter the array size: 3
+Enter the input array value with 2 space/enter:23 45 78
+Revered Array From input :78 45 23 
 
 ...Program finished with exit code 0
 Press ENTER to exit console.
+1
 */
